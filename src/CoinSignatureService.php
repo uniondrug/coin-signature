@@ -37,7 +37,7 @@ class CoinSignatureService extends Service
             "appsecret" => $appsecret,
             "timestamp" => $this->timestamp = time(),
             "nonce" => $this->nonce = rand(10000000, 99999999),
-            "data" => is_array($data) ? json_encode($data) : $data
+            "data" => json_encode($data)
         ]);
         if ($sign) {
             $result['appid'] = $appid;
