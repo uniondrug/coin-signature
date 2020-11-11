@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Uniondrug\\CoinFinance\\": "src/"
+      "Uniondrug\\CoinSignature\\": "src/"
     }
   },
   "bin": [
