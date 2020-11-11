@@ -11,7 +11,7 @@ use Uniondrug\Framework\Services\Service;
  * 资金系统接口加密验签生成工具
  * @package Uniondrug\CoinSignature
  */
-class SignatureService extends Service
+class CoinSignature extends Service
 {
     /**
      * 随机数

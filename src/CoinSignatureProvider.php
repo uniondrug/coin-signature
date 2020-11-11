@@ -7,12 +7,12 @@ namespace Uniondrug\CoinSignature;
 
 use Phalcon\Di\ServiceProviderInterface;
 
-class SignatureServiceProvider implements ServiceProviderInterface
+class CoinSignatureProvider implements ServiceProviderInterface
 {
     public function register(\Phalcon\DiInterface $di)
     {
-        $di->set('coinSignatureService', function(){
-            return new SignatureService();
+        $di->setShared('coinSignature', function(){
+            return new CoinSignature();
         });
     }
 }
