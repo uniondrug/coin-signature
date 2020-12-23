@@ -16,8 +16,5 @@
     "psr-4": {
       "Uniondrug\\CoinSignature\\": "src/"
     }
-  },
-  "bin": [
-    "console"
-  ]
+  }
 }
